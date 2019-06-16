@@ -77,10 +77,10 @@ public class Vigenere{
             indexArg - indexKey;
             
         if (number < 0){
-            return (char) (65 + 26 + number);
+            return (char) (97 + 26 + number);
         }
         if (number > 25){
-            return (char) (65 - 1 + (number-25));
+            return (char) (97 - 1 + (number-25));
         }
         return (char) (97 + number);
     }
