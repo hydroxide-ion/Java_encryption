@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+    id "io.freefair.lombok" version "3.7.1"
+}
+
+def projectName = 'encryption'
+def mainClass = 'console.Console'
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java"]
+        }
+    }
+}
+
+repositories {
+    
+   mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes('Main-Class':mainClass)
+        baseName projectName
+    }
+}
+
+run {
+    standardInput = System.in
+}
+
+mainClassName = mainClass
