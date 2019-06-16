@@ -1,4 +1,4 @@
-# Java_encryption
+# java_encryption
 Learning of encryption implemented in Java.
 
 - Caesar cipher
